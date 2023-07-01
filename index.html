@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Comida</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <nav class="container navbar navbar-expand-lg navbar-light bg-ligh">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">ChepeFood</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pupusas">Pupusas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pizzas">Pizzas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#rapida">Comida Rapida</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Mas
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Menú</a></li>
+              <li><a class="dropdown-item" href="#">Promos</a></li>
+              <li><a class="dropdown-item" href="#">Bebidas</a></li>
+              <li><a class="dropdown-item" href="#contact">Contacto</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="header h-100 text-center text-black" id="inicio">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    
+      <main class="px-3n">
+        <div class="textos">
+          <h1>Tienda de comidas.</h1>
+          <h5>ChepeFood</h5>
+          <p class="lead px-p">Bienvenido a nuestro rincón culinario, donde cada bocado es una danza de sabores y texturas que te llevará a un viaje sensorial único.</p>
+        </div>
+
+        <p class="lead">
+          <a href="#contact" class="btn btn-lg btn-danger fw-bold border-white bg-warning">Mas Info</a>
+        </p>
+      </main>
+    
+    </div>
+  </div>
+  <!-- cards -->
+  <div class="cards" id="ofertas">
+    <h2>Ofertas del dia.</h2>
+    <p>Hoy te traemos las mejores ofertas del día. Deléitate con nuestros platillos destacados, diseñados especialmente para consentir tu paladar y tu bolsillo.</p>
+    <div class="card" style="width: 18rem;">
+      <img src="imagenes/p3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example .</p>
+        <button type="button">Precio: <strong>100 $</strong> &nbsp; Antes: <del>115 $</del></button>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="imagenes/p2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. .</p>
+        <button type="button">Precio: <strong>100 $</strong> &nbsp; Antes: <del>120 $</del></button>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="imagenes/hamburguesas-caseras-receta.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Lorem ipsum dolor sit. .</p>
+        <button type="button">Precio: <strong>100 $</strong> &nbsp; Antes: <del>(150 $)</del></button>
+      </div>
+    </div>
+  </div>
+<!-- lista -->
+<div class="cont_pupusas" id="pupusas">
+  <h2>Pupusas</h2>
+  <p>Descubre una explosión de sabores irresistibles que te transportarán a una experiencia culinaria inolvidable.</p>
+  <ul>
+    <li><strong>Queso</strong></li>
+    <li>Frijol con Queso.</li>
+    <li>Chicharrón con Queso.</li>
+    <li>Revuelta(chicharrón, frifol, queso).</li>
+    <li>Mixta(chicharrón,frijol, queso y pollo).</li>
+    <li>Pollo con queso.</li>
+    <li>Jamón con queso.</li>
+    <li>Jalapeño con queso.</li>
+    <li>Hongos con queso.</li>
+    <li>Ajo con queso.</li>
+    <li>Chorizo con queso.</li>
+    <li>Loca(contiene los 11 sabores anteriores).</li>
+  </ul>
+  <div class="imgs">
+    <img src="imagenes/pupusa1.jpg" alt="">
+    <img src="imagenes/pupusa2.jpg" alt="">
+  </div>
+  <h4>Todos los precios varian entre:</h4>
+  <p><strong>70$, 80$, 90$, 100$</strong></p>
+</div>
+
+<div class="cont_pizza" id="pizzas">
+  <h2>Pizzas</h2>
+  <p>Explora nuestra carta llena de tentaciones culinarias, donde la tradición se fusiona con la innovación para deleitar tu paladar en cada platillo.</p>
+    <ul class="p8">
+      <li><strong>De 8 porciones</strong></li>
+      <li>Jamon <span>100$</span></li>
+      <li>Hawaiana <span>100$</span></li>
+      <li>Peperoni <span>100$</span></li>
+      <li>Suprema <span>100$</span></li>
+    </ul>
+    <ul class="p10">
+      <li><strong>De 10 porciones</strong></li>
+      <li>Jamon <span>100$</span></li>
+      <li>Jawaiana <span>100$</span></li>
+      <li>Peperoni <span>100$</span></li>
+      <li>Suprema <span>100$</span></li>
+    </ul>
+    <ul class="p12">
+      <li><strong>De 12 porciones</strong></li>
+      <li>Jamon <span>100$</span></li>
+      <li>Hawaiana <span>100$</span></li>
+      <li>Peperoni <span>100$</span></li>
+      <li>Suprema <span>100$</span></li>
+    </ul>
+    <ul class="p16">
+      <li><strong>De 16 porciones</strong></li>
+      <li>Jamon <span>100$</span></li>
+      <li>Hawaiana <span>100$</span></li>
+      <li>Peperoni <span>100$</span></li>
+      <li>Suprema <span>100$</span></li>
+    </ul>
+    <ul class="p20">
+      <li><strong>De 20 porciones</strong></li>
+      <li>Jamon <span>100$</span></li>
+      <li>Hawaiana <span>100$</span></li>
+      <li>Peperoni <span>100$</span></li>
+      <li>Suprema <span>100$</span></li>
+    </ul>
+</div>
+
+<div class="cont_rapida" id="rapida">
+  <h2>Comida Rapida</h2>
+  <p>Déjate seducir por nuestro menú cautivador, creado con pasión y maestría, para brindarte momentos memorables llenos de placer gastronómico.</p>
+  <div class="uls1">
+    <div class="ull">
+
+    <ul>
+      <li><strong>Hamburguesas</strong></li>
+      <li>Res <span>100$</span></li>
+      <li>Pollo <span>100$</span></li>
+    </ul>
+    <ul>
+      <li><strong>Sandwich</strong></li>
+      <li>Jamon <span>100$</span></li>
+      <li>Pollo <span>100$</span></li>
+    </ul>
+    <ul>
+      <li><strong>Quesadillas</strong></li>
+      <li>Jamon <span>100$</span></li>
+      <li>Pollo <span>100$</span></li>
+    </ul>
+    <ul>
+      <li><strong>Gringas</strong></li>
+      <li>Res <span>100$</span></li>
+      <li>Pollo <span>100$</span></li>
+    </ul>
+  </div>
+
+    <div class="ulimg">
+    <img src="imagenes/hamburguesas-caseras-receta.webp" alt="">
+    <img src="imagenes/recetario-de-sandwiches.jpg" alt="">
+    <img src="imagenes/gringa-al-pastor3.webp" alt="">
+    </div>
+  </div>
+  <div class="uls2">
+    <div class="ull">
+
+    <ul>
+      <li><strong>Chilaquiles</strong></li>
+      <li>Res <span>90$, 100$</span></li>
+      <li>Pollo <span>100$</span></li>
+      <li>Baleadas <span>100$</span></li>
+      <li>Tajadas y carne <span>100$</span></li>
+      <li>Servicio completo de tajadas <span>100$</span></li>
+    </ul>
+    <ul>
+      <li><strong>Tacos</strong></li>
+      <li>Res <span>100$</span></li>
+      <li>Pollo <span>100$</span></li>
+    </ul>
+    <ul>
+      <li><strong>Extras</strong></li>
+      <li>Curtido <span>100$</span></li>
+      <li>Arroz <span>100$</span></li>
+      <li>Papas fritas <span>100$</span></li>
+    </ul>
+  </div>
+   <div class="ulimg">
+    <img src="imagenes/chilaquiles-2-1024x700-480x270.jpg" alt="">
+    <img src="imagenes/Quesadilla_2.jpg" alt="">
+
+    <img src="imagenes/tacos-mexicanos.jpg" alt="">
+    <!-- <img src="imagenes/p5.jpg" alt=""> -->
+   </div>
+  </div>
+</div>
+</div>
+
+<footer class="container" id="">
+  <div class="footer-content">
+    <div class="footer-section about">
+      <h2>Sobre Nosotros</h2>
+      <p>Somos un restaurante apasionado por ofrecer experiencias culinarias únicas. Nuestro equipo de chefs expertos se esfuerza por crear platos deliciosos que deleiten a nuestros comensales.</p>
+    </div>
+    <div class="footer-section contact" id="contact">
+      <h2>Contacto</h2>
+      <p><i class="fas fa-map-marker-alt"></i> Dirección: Calle Principal, Acoyapa, Nicaragua</p>
+      <p><i class="fas fa-envelope"></i> Email: info@chepefood.com</p>
+      <p><i class="fas fa-phone"></i> Teléfono: +1234567890</p>
+    </div>
+    <div class="footer-section links">
+      <h2>Enlaces Rápidos</h2>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Pupusas</a></li>
+        <li><a href="#">Pizzas</a></li>
+        <li><a href="#">Ofertas del Día</a></li>
+        <li><a href="#">Comida Rapida</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>Todos los derechos reservados &copy; 2023 | Restaurante ChepeFood</p>
+    <p>Creado por: <a href="#">Rolando Rivera</a></p>
+  </div>
+</footer>
+
+
+<!-- <script src="script.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
